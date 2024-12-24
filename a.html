@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Login fomr</h1>
+    <div id="login">
+        <h1>Login form </h1>
+        <form action="/login" method="post">
+        <input type="text" min="6" max="16"  placeholder="Enter username" name="username"id="user" required> <br><br>
+        <input type="password" min="5" max="15" placeholder="Enter password" name="password" id="password" required > <br><br>
+        <input type="checkbox" width="50px"> Remember Me <br><br>
+        <input type="submit" value="Submit" onclick="sub()" class="btn btn-warning" >
+        <!-- If dont an account ? <a href="register.html" onclick="reg()" style="text-decoration: none; width: 50px;" >register</a> -->
+        <!-- If dont an account ? <button onclick="regs()">register</button> -->
+    </form> 
+    </div>
+    <script>
+
+document.querySelector("#form").addEventListener("submit", submitFun);
+
+
+function submitFun(elme) {
+    elme.preventDefault();
+    username = document.querySelector("#user").value;
+    password =  document.querySelector("#password").value;
+
+    if (username == "durgesh" && password == "durgesh") {
+
+        window.location.href = "success.html";
+    } else {
+        alert("Invalid username or password");
+        document.querySelector("#form").reset();
+    }
+
+}
+
+        // a=document.getElementById("user").value;
+        // b=document.getElementById("password").value;
+        // if(a=="durgesh" && b=="Durgesh"){
+        //     // res.send("login good");
+        //     console.log("Good!!!!");
+
+        // }else{
+        //     // res.send("invalid login ,...")
+        //     console.log("invalid ");
+        // }
+    </script>
+    
+</body>
+</html>

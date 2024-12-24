@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AttendNCE system</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- connect styles.css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://leadschool.in/wp-content/uploads/2022/05/banner-Benefits-of-online-attendance-app.png">
+    <style>
+div#login{
+    width: 400px;
+    height: 0px;
+    background-color: blueviolet;
+    display: none;
+}
+body{
+    background-image: url(https://leadschool.in/wp-content/uploads/2022/05/banner-Benefits-of-online-attendance-app.png);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+
+}
+
+.div2{
+    background-color: aquamarine;
+}
+/* div#register{
+    width: 400px;
+    height: 0px;
+    background-color: rgb(43, 226, 174);
+    display: none;
+
+} */
+.anc{
+    padding-left: 57px;
+}
+.but1:hover{
+            text-decoration-line: underline;
+            color: deeppink;
+
+}
+input.check1{
+    width:30px;
+    height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.login-box .a1:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+/* 
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+.login-box .a1:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+} */
+.mi:hover{
+    background-color: blueviolet;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div style="position: absolute;">
+                <img src="https://lh3.googleusercontent.com/CDtNdJO2JIbO2pk_5w4dEE_QxFIpm5VgOAdD7iWOVOnapAbf0N2ZyEYdZShax9QtZFwi" width="36px" alt="">
+                <a href="index.html" class="but1">Atendance Report</a>
+            </div >
+
+
+            <div style="margin-left: 1000px; ">
+                <a href="index.html" class="anc but1 mi" >Home</a>
+                <button  onclick="regs()" style="margin-left: 25px;" class="mi">Register</button>
+
+                <a href="student_dashboard.html" class="anc but1">check_attendance</a>
+                <button onclick="me()" class="clik"  style="margin-left: 64px;" style="color: deeppink;" >Login</button>
+            </div>
+
+        </nav>
+    </header>
+    <!-- <i class="fa-solid fa-lock"></i> -->
+    <div id="login">
+
+
+
+
+
+
+
+        <h1>Login form </h1>
+        
+        <form action="/login" method="post">
+                
+            <label for="" style="color: magenta;" >Enter username : </label>
+            <input type="text" min="6" max="16"  placeholder="Enter username" name="username"id="user" style="border-radius: 50px;" required > <br><br>
+                
+            <label for="" style="color: magenta; ">Enter Password : </label>
+            <input type="password" min="5" max="15" placeholder="Enter password" name="password" id="password" style="border-radius: 50px;" required > <br><br>
+            
+
+                <!-- <div>
+
+                </div> -->
+            <input type="checkbox" class="check1" width="90px" style=" position: absolute;"> <p style="padding-left: 40px; color: rgb(0, 255, 64)">Remember Me </p> <br><br>
+            <input type="submit" value="Submit" onclick="sub()" class="a1" style="position: absolute;">
+                <!-- btn btn-warning -->
+                <!-- If dont an account ? <a href="register.html" onclick="reg()" style="text-decoration: none; width: 50px;" >register</a> -->
+        
+            <div  style="margin-left: 100px;">
+                <p style="color: rgb(42, 108, 165);position: absolute; ">If dont an account ?</p> 
+                <button  onclick="regs()" style="margin-left: 160px;">register</button>
+            </div>
+        </form> 
+        
+    
+
+    </div>
+    <!-- class="login-box"  -->
+    <div id="register" >
+        <h1 >Register Form</h1>
+        <form action="/markRegister" method="post">
+        
+            <label for="" style="color: magenta;">Enter Username : </label>
+            <input type="text" placeholder="Enter username" name="regname" class="username" required> <br><br>
+
+            <label for="" style="color: magenta;">Enter Email :</label>
+            <input type="email" placeholder="Enter Email-id" name="email"  required> <br><br>
+
+            <label for="" style="color: magenta;">Enter password :</label>
+            <input type="password" placeholder="Enter password" name="regpass" class="password" required> <br><br>
+            
+            <input type="submit" value="Submit"  class="btn btn-warning" >
+        </form>
+    </div>
+
+
+    <!-- <footer>
+        <div class="col-md-6">
+            <form>
+                <button type="submit" formaction="https://www.youtube.com/@marotitechnics"><img src="yt1.png" alt="" class="yt1"></button>
+             </form>
+            
+             <form>
+                <button type="submit" formaction="https://in.linkedin.com/in/maroti-puskar-ba6b02253"><img src="link.png" alt="" class="yt1"></button>
+             </form>
+
+             <form>
+                <button type="submit" formaction="https://www.facebook.com/maroti.puskar.5/"><img src="fa.png" alt="" class="yt1"></button>
+             </form>
+
+             <form>
+                <button type="submit" formaction="https://www.instagram.com/marotipuskar/"><img src="inst.png" alt="" class="yt1"></button>
+             </form>
+        </div>
+
+    </div>
+    <h1>Designed by </h1>
+    <a href="https://in.linkedin.com/in/maroti-puskar-ba6b02253" style="color: white;">Maroti Puskar</a> <br>
+    <h1>copyright c all rights are reserved </h1>
+    </footer> -->
+    
+    <!-- <script src="index.js"></script> -->
+    <script>
+        let username = document.getElementById("user").value;
+        let password = document.getElementById("password").value;
+function me(){
+    document.getElementById("login").style.display="block";
+    document.body.style.backgroundColor="red";  
+    // console.log("my");
+    // console.log(login);
+    // document.getElementsByClassName("clik").style.display="none";
+    document.getElementsById("register").style.display="none";
+
+}
+function regs(){
+    console.log("click me...");
+    document.getElementById("register").style.display="block";
+    document.getElementById("login").style.display="none"
+    // document.body.style.backgroundColor="rgb(14, 251, 14)";
+    document.getElementsByClassName("clik").style.display="none";
+
+}
+    </script>
+    <!-- <script src="index1server.js"></script> -->
+    <!-- <script>
+        
+
+    </script> -->
+
+
+
+    <!-- some comments are below here  -->
+    <!-- onclick="sub" -->
+    <!-- If dont an account ? <button  style="background-color: blue;"></button> -->
+
+
+     
+    
+    <!-- <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6 div1" >
+            <form action="">
+                <input type="text" placeholder="email ID" class="i1" includes="@"> <br> <br>
+                <input type="text" placeholder="username" class="i2" minimum="4" maximum="16"> <br><br> 
+                <input type="text" placeholder="password" class="i3" minimum="5" maximum="15"> <br><br>
+                <button class="but1">Sign Up</button> -->
+
+
+
+                <!-- <button class="but2">Sign In</button><br> <br> -->
+            
+            <!-- </form>
+        </div>
+         -->
+        <!-- <div class="col-sm-12 col-md-6 col-lg-6 div2">
+            <form action="">
+                <input type="text" placeholder="Enter username" class="i4"> <br> <br>
+                <input type="text" placeholder="Enter password" class="i5"><br> <br>
+                <button class="but2">Sign In</button><br> <br>
+            </form>
+        </div> -->
+        
+        
+
+    <!-- </div> -->
+</body>
+</html>

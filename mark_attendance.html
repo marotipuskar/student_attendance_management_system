@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance System</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <style>
+.sec{
+  margin: auto;
+  width: 50%;
+  border: 3px solid yellow;
+  padding: 10px;
+}
+.but1:hover{
+text-decoration-line: underline;
+color: deeppink;
+}
+body{
+background-color: black;
+          
+}
+
+
+
+
+
+
+
+
+
+.a1:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+
+
+/* 
+        
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+.login-box .a1:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+} */
+
+
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body style="background-color: rgb(176, 118, 224);">
+  <nav style="background-color: rgb(11, 21, 38);">
+    <!-- cornflowerblue; -->
+    <button style="position: absolute; "><a href="index.html" class="btn btn-outline-danger but1" style="text-decoration: none; ">home</a></button>
+    <button  style="margin-left: 1410px; "><a href="index.html" class="btn btn-outline-info" style="text-decoration: none;">Logout</a></button>
+  </nav>
+    <!-- but1 -->
+
+<section class="sec" style="margin: auto; width: 50%; border: 3px solid rgb(from color r g b); padding: 10px; background-color: greenyellow " >
+  <!-- rgb(210, 39, 198); -->
+
+    <h1 >WElcome To Student attendance system </h1>
+    
+
+        
+        <form action="/markAttendance" id="attendanceForm" method="post">
+            <!-- Name : <input type="text" placeholder="Enter Your Name "> <br> <br> -->
+            
+                <label for="" style="font-size: 35px; font-family: 'Josefin Sans', sans-serif;">Enter PRN No. : </label>
+                <input type="number" placeholder="Enter PRN No. " name="prnno" style="border-radius: 50px;  border-color: blue; text-align: center; height: 32px;" required> <br><br>
+            
+            
+                <!-- <label for="Name" style="font-size: 35px; font-family: 'Josefin Sans', sans-serif;">Name:</label> 
+                <input list="name" placeholder="Enter Your Name" name="Name"  style="border-radius: 50px;  border-color: blue; height: 32px; text-align: center; font-size: 47px; font-family: 'Josefin Sans', sans-serif;" > <br> 
+                <datalist id="name">
+                    <option value="shirale umakant">shirale umakant</option>
+                    <option value="kumbhar onkar">kumbhar onkar</option>
+                    <option value="bhalerao sneha">bhalerao sneha</option>
+                    <option value="chapke sakshi">chapke sakshi</option>
+                    <option value="puskar maroti">puskar maroti</option>
+                    <option value="dharmadhikari vaishnavi">dharmadhikari vaishnavi</option>
+                    <option value="tare sakshi">tare sakshi</option>
+                    <option value="sudewad samudhi">sudewad samudhi</option>
+                    <option value="jojare tanaya">jojare tanaya</option>
+                    <option value="dukare sayli">dukare sayli</option>
+                    <option value="dhonge mahesh">dhonge mahesh</option>
+                    <option value="chidrawar dhanashree">chidrawar dhanashree</option>
+                    <option value="polwar samkit">polwar samkit</option>
+                    <option value="renge kanchan">renge kanchan</option>
+                    <option value="thomre vedant">thomre vedant</option>
+                    <option value="telbhare rahul">telbhare rahul</option>
+                    <option value="vyanktesh kachve">vyanktesh kachve</option>
+                    <option value="gaikwad siddhesh">gaikwad siddhesh</option>
+                    <option value="chaudhare kanhaiyaa">chaudhare kanhaiyaa</option>
+                    <option value="ayesha aeman">ayesha aeman</option>
+                    <option value="raut rahul">raut rahul</option>
+                    <option value="tambe dadarao">tambe dadarao</option>
+                    <option value="chinchane vijay">chinchane vijay</option>
+                    <option value="mohameed mustaque">mohameed mustaque</option>
+                    <option value="malik ezmam">malik ezmam</option>
+                    <option value="aishwarya mohite">aishwarya mohite</option>
+                    <option value="bansode sadhna">bansode sadhna</option>
+                    <option value="kakde gitanjali">kakde gitanjali</option>
+                    <option value="sakina fatima">sakina fatima </option>
+                    <option value="rokade gajanan">rokade gajanan</option>
+                    <option value="mule sachin">mule sachin</option>
+                    <option value="mohameed areeb">mohameed areeb</option>
+                    <option value="syed danish">syed danish</option>
+                    <option value="syed rayyan">syed rayyan</option>
+                    <option value="mohameed zohen">mohameed zohen</option>
+                    <option value="joshi piyush">joshi piyush</option>
+                </datalist> <br> -->
+            
+                <!-- <label for="" style="font-size: 35px; font-family: 'Josefin Sans', sans-serif;">Choose Your Class</label> 
+                <input list="class" placeholder="Enter Your Class" name="Class" style="border-radius: 50px; text-align: center;  border-color: blue; height: 32px;" required>
+                <datalist id="class">
+                    <option value="FE">FIrst Year (FE)</option>
+                    <option value="SE">Second Year(SE)</option>
+                    <option value="TE">Third Year(TE)</option>
+                    <option value="BE">Final Year(BE)</option>
+                </datalist><br> <br>
+            
+                <label for="" style="font-size: 35px; font-family: 'Josefin Sans', sans-serif;">Choose your Branch</label>
+                <input list="branch" placeholder="Enter Your Branch" name="Branch" style="border-radius: 50px;  border-color: blue; height: 32px; text-align: center;" required>
+                <datalist id="branch">
+                    <option value="cse">cse</option>
+                    <option value="mech">mech</option>
+                    <option value="eee">eee</option>
+                    <option value="civil">civil</option>
+                </datalist> <br> <br> -->
+            
+            
+                <label for="" style="font-size: 35px; font-family: 'Josefin Sans', sans-serif;">Enter Date: </label>
+                <input type="date" name="Dates" style="border-radius: 50px;  border-color: blue; height: 32px; "> <br> <br>
+            
+            <input type="submit" value="Mark Attendance" class="a1" name="submit-attendance">
+            <!-- class="btn btn-primary" -->
+        </form>
+    </div>
+
+
+</section>
+
+
+
+<a href="/student_dashboard.html">View_Attendance_Records</a>
+<script src="server.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
